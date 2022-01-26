@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <h2>Let the game begin!</h2>
+    <section>
+        <h3>{{ name1 }}</h3>
+        <p>Choose your move, rock, paper or scissors!</p>
+        <a href="/rock"><button>Rock</button></a>
+        <a href="/paper"><button>Paper</button></a>
+        <a href="/scissors"><button>Scissors</button></a>
+    </section>
+</main>
+{% endblock %}

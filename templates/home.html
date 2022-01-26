@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+<main>
+    <h2>Here's how to play...</h2>
+    <p>This is a two player game.</p>
+    <p>Player 1 selects between "Rock", "Paper" or "Scissor"...</p>
+    <p>Then Player 2 selects between the same options as above.</p>
+    <h3>Who wins?</h3>
+    <p>Rock smashes Scissors, so Rock wins</p>
+    <p>Paper wraps Rock, so Paper wins</p>
+    <p>Scissors cut paper, so Scissors win</p>
+    <p>And if you both match, then it's a draw and you play again!</p>
+    <form action="/play" method="POST">
+        <label for="name1">Player 1's name:</label><br>
+        <input type="text" name="name1" id="name1"><br><br>
+        <label for="name2">Player 2's name:</label><br>
+        <input type="text" name="name2" id="name2"><br><br>
+        <input type="submit" value="Let's Play!">
+    </form>
+</main>
+
+{% endblock %}
